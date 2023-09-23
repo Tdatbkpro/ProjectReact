@@ -4,13 +4,17 @@ import React from "react";
 
 class MyComponent extends React.Component {
     //JSX
+
+    state = {
+        name : "Dat",
+        age : 19
+    };
+
+
     render() {
         return (
             <div>
-                My first component
-                {
-                    Math.random()
-                }
+               My name is {this.state.name} and I am {this.state.age} years old
             </div>
         );
     }
